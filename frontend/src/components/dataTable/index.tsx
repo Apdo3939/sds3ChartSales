@@ -1,7 +1,7 @@
 
 const DataTable = () => {
     return (
-        <div className="table-responsive container">
+        <div className="table-responsive">
             <table className="table table-striped table-sm">
                 <thead>
                     <tr>
@@ -32,14 +32,14 @@ const DataTable = () => {
                         <td>Julio Verne</td>
                         <td>10</td>
                         <td>5</td>
-                        <td>1000.00</td>
+                        <td>11000.00</td>
                     </tr>
                     <tr>
                         <td>22/04/2021</td>
                         <td>Elon Musk</td>
                         <td>100</td>
                         <td>99</td>
-                        <td>68000.00</td>
+                        <td>59000.00</td>
                     </tr>
                     <tr>
                         <td>22/04/2021</td>
