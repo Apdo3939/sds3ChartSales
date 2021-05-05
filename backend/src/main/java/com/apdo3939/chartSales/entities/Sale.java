@@ -7,11 +7,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "tb_sale")
+@Table(name = "tb_sales")
 public class Sale implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
@@ -24,6 +26,10 @@ public class Sale implements Serializable {
 	private Integer deals;
 	private Double amount;
 	private LocalDate date;
+	
+	@ManyToOne
+	@JoinColumn(name = "seller_id")
+	private Seller seller;
 	
 	public Sale() {
 		// TODO Auto-generated constructor stub
@@ -76,6 +82,14 @@ public class Sale implements Serializable {
 
 	public void setDate(LocalDate date) {
 		this.date = date;
+	}
+	
+	public Seller getSeller() {
+		return seller;
+	}
+
+	public void setSeller(Seller seller) {
+		this.seller = seller;
 	}
 
 	@Override
