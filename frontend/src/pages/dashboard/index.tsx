@@ -4,7 +4,6 @@ import DonutChart from "components/donutChart";
 import Footer from "components/footer";
 import NavBar from "components/navBar";
 
-
 const DashBoard = () => {
     return (
         <>
